@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div id="loginPage">
+            <h2>Cyber Portal</h2>
+
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+
+            <button onclick="login()">Login</button>
+            <h6>Guest: user/user</h6>
+        </div>
+
+        <!-- FIRST CLUE: “Some instructions are public, just not obvious.” -->
+
+        <div id="adminPanel" class="panel">
+            <h2>Admin Panel</h2>
+
+            <div class="flag-box">
+                <p><strong>Cipher Type:</strong></p>
+                <button>Vigenère Cipher Detected</button><br><br>
+
+                <p><strong>Key:</strong></p>
+                <button style="color:#00ff9d; font-weight:bold;">
+                    YOUCANTESCAPE
+                </button>
+            </div>
+
+            <button onclick="logout()">Logout</button>
+        </div>
+
+        <div id="userPanel" class="panel">
+            <h2>User Panel</h2>
+
+            <div class="flag-box">
+                <p>Access Restricted Data</p>
+                <p>
+                    Some things are not hidden in plain sight...
+                    but they are still visible if you know where to look.
+                </p>
+            </div>
+
+            <button onclick="logout()">Logout</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
