@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <h2>views: <span id="counter">0</span>s</h2>
 
     <div class="card">
 
@@ -56,6 +57,12 @@
         </div>
 
     </div>
+    <script>
+        let count = localStorage.getItem("visits") || 0;
+        count++;
+        localStorage.setItem("visits", count);
+        document.getElementById("counter").innerText = count;
+    </script>
 
     <script src="script.js"></script>
 </body>
